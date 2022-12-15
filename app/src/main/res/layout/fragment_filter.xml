@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/common_data_padding"
+    android:paddingEnd="@dimen/common_data_padding"
+    tools:context=".ui.FilterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLabelDistrict"
+            style="@style/LabelTextView"
+            android:layout_marginTop="@dimen/medium_margin_betwn_views"
+            android:text="@string/label_select_district"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/actvDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:hint="@string/hint_select_district"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="5sp"
+            android:maxLines="20"
+            android:minHeight="28dp"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelDistrict" />
+
+        <TextView
+            android:id="@+id/tvLabelMarket"
+            style="@style/LabelTextView"
+            android:layout_marginTop="@dimen/large_margin_betwn_views"
+            android:text="@string/hint_select_market"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actvDistrict" />
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/actvMarket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:hint="@string/hint_select_village"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="5sp"
+            android:maxLines="20"
+            android:minHeight="28dp"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelMarket" />
+
+        <TextView
+            android:id="@+id/tvLabelSort"
+            style="@style/LabelTextView"
+            android:layout_marginTop="@dimen/large_margin_betwn_views"
+            android:text="@string/label_order_by"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actvMarket" />
+
+        <RadioGroup
+            android:id="@+id/rgSortBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin_betwn_views"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelSort">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_none" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbPriceAsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_price_asc" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbPriceDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_price_desc" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbDateAsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_date_asc" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbDateDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_date_desc" />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="@string/title_filter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bClear"
+            app:layout_constraintTop_toBottomOf="@id/rgSortBy" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_clear"
+            app:layout_constraintEnd_toStartOf="@id/bFilter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bFilter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/small_margin_betwn_views"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_data_padding">
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/LabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="15/08/2022" />
+
+
+        <!--Left View-->
+        <TextView
+            android:id="@+id/tvLabelState"
+            style="@style/LabelTextView"
+            android:text="@string/label_state"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvValueState"
+            style="@style/NormalTextView"
+            tools:text="@string/title_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelState"/>
+
+        <TextView
+            android:id="@+id/tvLabelDistrict"
+            style="@style/LabelTextView"
+            android:text="@string/label_district"
+            android:layout_marginTop="@dimen/medium_margin_betwn_views"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueState"/>
+
+        <TextView
+            android:id="@+id/tvValueDistrict"
+            style="@style/NormalTextView"
+            tools:text="@string/title_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelDistrict"/>
+
+        <TextView
+            android:id="@+id/tvLabelMarket"
+            style="@style/LabelTextView"
+            android:text="@string/label_market"
+            android:layout_marginTop="@dimen/medium_margin_betwn_views"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueDistrict"/>
+
+        <TextView
+            android:id="@+id/tvValueMarket"
+            style="@style/NormalTextView"
+            tools:text="@string/title_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelMarket"/>
+
+
+        <!--Right Views-->
+        <TextView
+            android:id="@+id/tvLabelVariety"
+            style="@style/LabelTextView"
+            android:text="@string/label_variety"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvValueVariety"
+            style="@style/NormalTextView"
+            tools:text="@string/title_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelVariety"/>
+
+        <TextView
+            android:id="@+id/tvLabelCommodity"
+            style="@style/LabelTextView"
+            android:text="@string/label_commodity"
+            android:layout_marginTop="@dimen/medium_margin_betwn_views"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueVariety"/>
+
+        <TextView
+            android:id="@+id/tvValueCommodity"
+            style="@style/NormalTextView"
+            tools:text="@string/title_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelCommodity"/>
+
+        <TextView
+            android:id="@+id/tvLabelPrice"
+            style="@style/LabelTextView"
+            android:text="@string/label_price"
+            android:layout_marginTop="@dimen/medium_margin_betwn_views"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueDistrict"/>
+
+        <TextView
+            android:id="@+id/tvValuePrice"
+            style="@style/NormalTextView"
+            tools:text="@string/title_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelPrice"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

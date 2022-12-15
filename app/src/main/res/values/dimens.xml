@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="common_data_padding">16dp</dimen>
+    <dimen name="small_margin_betwn_views">4dp</dimen>
+    <dimen name="medium_margin_betwn_views">6dp</dimen>
+    <dimen name="large_margin_betwn_views">10dp</dimen>
+</resources>

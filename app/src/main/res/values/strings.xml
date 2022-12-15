@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">GroceryPrice</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_grocery_list">Grocery Price</string>
+    <string name="label_state">State</string>
+    <string name="title_value">Value</string>
+    <string name="label_district">District</string>
+    <string name="label_market">Market</string>
+    <string name="label_variety">Variety</string>
+    <string name="label_commodity">Commodity</string>
+    <string name="label_price">Price</string>
+    <string name="list_fragment_label">Grocery List Fragment</string>
+    <string name="filter_fragment">Filter Fragment</string>
+    <string name="title_filter">Filter</string>
+    <string name="hint_select_district">Select District</string>
+    <string name="hint_select_market">Select Market/Village</string>
+    <string name="label_select_district">Select District</string>
+    <string name="hint_select_village">Select Village</string>
+    <string name="label_sort_by">Sort By</string>
+    <string name="title_price_asc">Price Ascending</string>
+    <string name="title_price_desc">Price Descending</string>
+    <string name="title_date_asc">Date Ascending</string>
+    <string name="title_date_desc">Date Descending</string>
+    <string name="title_ascending">Ascending</string>
+    <string name="title_descending">Descending</string>
+    <string name="title_clear">Clear</string>
+    <string name="label_order_by">Order By</string>
+    <string name="title_none">None</string>
+</resources>
